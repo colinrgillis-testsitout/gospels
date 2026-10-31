@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Christian Texts · Gospel Reader</title>
+<meta name="description" content="A Sefaria-style reader for the Christian gospels, with parallels and connections.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📖%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<header>
+  <div class="bar">
+    <div class="brand"><h1>Christian Texts</h1><small>The Four Gospels · prototype</small></div>
+    <button class="iconbtn" id="smaller" aria-label="Smaller text">A−</button>
+    <button class="iconbtn" id="bigger" aria-label="Larger text">A+</button>
+    <button class="iconbtn" id="theme" aria-label="Toggle theme">◐</button>
+  </div>
+  <div class="search"><input id="q" type="search" placeholder="Search the loaded passages…" autocomplete="off"></div>
+  <div class="tabs" id="tabs" role="tablist"></div>
+</header>
+
+<div class="layout">
+  <main id="main"></main>
+  <aside id="panel" aria-live="polite"></aside>
+</div>
+<footer>
+  Text: King James Version (public domain). This prototype loads four sample passages; the full build would load every chapter of Matthew, Mark, Luke and John, with more translations side by side. Connections shown are illustrative starter data.
+</footer>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
